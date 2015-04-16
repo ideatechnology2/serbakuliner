@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Supplier SerbaKuliner</title>
+<script language="javascript">
+function validasi(form){
+  if (form.email.value == ""){
+    alert("Anda Belum Mengisikan Email.");
+    form.email.focus();
+    return (false);
+  }
+     
+  if (form.password.value == ""){
+    alert("Anda Belum Mengisikan Password.");
+    form.password.focus();
+    return (false);
+  }
+  return (true);
+}
+</script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body OnLoad="document.login.email.focus();" style="background-color:#BF3E11;">
+<div id="main_container">
+<div id="banner"><img src="web/images-admin/banner4.jpg"></div>
+	<div id="header">
+  		<div id="content">
+		<h2>Silakan Login Supplier</h2>
+    <img src="web/images-admin/login-welcome.gif" width="97" height="105" hspace="10" align="left">
+
+<form name="login" action="cek_login_supplier.php" method="POST" onSubmit="return validasi(this)">
+<table>
+<tr><td>Email</td><td> : <input type="text" name="email"></td></tr>
+<tr><td>Password</td><td> : <input type="password" name="password"></td></tr>
+<tr><td colspan="2"><input type="submit" value="Login"></td></tr>
+</table>
+</form>
+  </div>
+	
+</div>
+</div>
+        <div id="center_footer">
+         <br />copyright © 2015 - SerbaKuliner - DEVELOPER BY SWATECH S3 2015. All Rights Reserved. 
+        </div>
+        
+
+</body>
+</html>

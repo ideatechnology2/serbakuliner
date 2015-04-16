@@ -1,0 +1,784 @@
+<?php 
+  error_reporting(0);
+  session_start();	
+  include "app/koneksi.php";
+
+  ?>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>SerbaKuliner | Home ::</title>
+<link href="web/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary JavaScript plugins) -->
+<script type='text/javascript' src="web/js/jquery-1.11.1.min.js"></script>
+<!-- Custom Theme files -->
+<link href="web/css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<!-- start menu -->
+<link href="web/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="web/js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<script src="web/js/menu_jquery.js"></script>
+</head>
+<body>
+<!-- header_top -->
+<div class="top_bg">
+<div class="container">
+<div class="header_top">
+	<div class="top_right">
+		<ul>
+			<li><a href="#">Recently viewed</a></li>|
+			<li><a href="contact.html">Contact</a></li>|
+			<li class="login" >
+						<div id="loginContainer"><a href="#" id="loginButton"><span>Login</span></a>
+						    <div id="loginBox">                
+						        <form id="loginForm">
+						                <fieldset id="body">
+						                	<fieldset>
+						                          <label for="email">Email Address</label>
+						                          <input type="text" name="email" id="email">
+						                    </fieldset>
+						                    <fieldset>
+						                            <label for="password">Password</label>
+						                            <input type="password" name="password" id="password">
+						                     </fieldset>
+						                    <input type="submit" id="login" value="Sign in">
+						                	<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+						            	</fieldset>
+						            <span><a href="#">Forgot your password?</a></span>
+							 </form>
+				        </div>
+			      </div>
+			</li>
+		</ul>
+	</div>
+	<div class="clearfix"></div>
+</div>
+</div>
+</div>
+<!-- header -->
+<div class="header_bg">
+<div class="container">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="web/images/header2.jpg" /> </a>
+		</div>
+		<!-- start header menu -->
+		<!-- start header menu -->
+	<!-- start header menu -->
+		<ul class="megamenu skyblue">
+			<li><a class="color1" href="index.html">Home</a></li>
+			<li class="grid"><a class="color2" href="#">new arrivals</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>shop</h4>
+								<ul>
+									<li><a href="women.html">Makanan Berat</a></li>
+									<li><a href="women.html">Makanan Ringan</a></li>
+									<li><a href="women.html">Minuman Dingin</a></li>
+									<li><a href="women.html">Minuman Panas</a></li>
+									<li><a href="women.html">Jamu Tradisional</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>help</h4>
+								<ul>
+									<li><a href="women.html">Cara registrasi account</a></li>
+									<li><a href="women.html">Cara menjadi Supplier</a></li>
+									<li><a href="women.html">Cara Pembelian</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>account</h4>
+								<ul>
+									<li><a href="women.html">login</a></li>
+									<li><a href="women.html">create an account</a></li>
+									<li><a href="women.html">create wishlist</a></li>
+									<li><a href="women.html">my shopping bag</a></li>
+									<li><a href="women.html">create wishlist</a></li>
+								</ul>	
+							</div>						
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>my company</h4>
+								<ul>
+									<li><a href="women.html">trends</a></li>
+									<li><a href="women.html">sale</a></li>
+									<li><a href="women.html">style videos</a></li>
+									<li><a href="women.html">accessories</a></li>
+									<li><a href="women.html">kids</a></li>
+									<li><a href="women.html">style videos</a></li>
+								</ul>	
+							</div>
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>popular</h4>
+								<ul>
+									<li><a href="women.html">Emping</a></li>
+									<li><a href="women.html">Keripik Sanjay</a></li>
+									<li><a href="women.html">Coffee Bongkar</a></li>
+									<li><a href="women.html">Nasi Goreng Ayam</a></li>
+									<li><a href="women.html">Lemon Tea</a></li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    				</div>
+				</li>
+			<li class="active grid"><a class="color4" href="#">Camilan</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>shop</h4>
+								<ul>
+									<li><a href="women.html">Makanan Berat</a></li>
+									<li><a href="women.html">Makanan Ringan</a></li>
+									<li><a href="women.html">Minuman Dingin</a></li>
+									<li><a href="women.html">Minuman Panas</a></li>
+									<li><a href="women.html">Jamu Tradisional</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>help</h4>
+								<ul>
+									<li><a href="women.html">Cara registrasi account</a></li>
+									<li><a href="women.html">Cara menjadi Supplier</a></li>
+									<li><a href="women.html">Cara Pembelian</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>account</h4>
+								<ul>
+									<li><a href="women.html">login</a></li>
+									<li><a href="women.html">create an account</a></li>
+									<li><a href="women.html">create wishlist</a></li>
+									<li><a href="women.html">my shopping bag</a></li>
+									<li><a href="women.html">create wishlist</a></li>
+								</ul>	
+							</div>						
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>my company</h4>
+								<ul>
+									<li><a href="women.html">trends</a></li>
+									<li><a href="women.html">sale</a></li>
+									<li><a href="women.html">style videos</a></li>
+									<li><a href="women.html">accessories</a></li>
+									<li><a href="women.html">kids</a></li>
+									<li><a href="women.html">style videos</a></li>
+								</ul>	
+							</div>
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>popular</h4>
+								<ul>
+									<li><a href="women.html">Emping</a></li>
+									<li><a href="women.html">Keripik Sanjay</a></li>
+									<li><a href="women.html">Coffee Bongkar</a></li>
+									<li><a href="women.html">Nasi Goreng Ayam</a></li>
+									<li><a href="women.html">Lemon Tea</a></li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    				</div>
+				</li>				
+				<li><a class="color5" href="#">Makanan Kaleng</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>shop</h4>
+								<ul>
+									<li><a href="women.html">Makanan Berat</a></li>
+									<li><a href="women.html">Makanan Ringan</a></li>
+									<li><a href="women.html">Minuman Dingin</a></li>
+									<li><a href="women.html">Minuman Panas</a></li>
+									<li><a href="women.html">Jamu Tradisional</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>help</h4>
+								<ul>
+									<li><a href="women.html">Cara registrasi account</a></li>
+									<li><a href="women.html">Cara menjadi Supplier</a></li>
+									<li><a href="women.html">Cara Pembelian</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>account</h4>
+								<ul>
+									<li><a href="women.html">login</a></li>
+									<li><a href="women.html">create an account</a></li>
+									<li><a href="women.html">create wishlist</a></li>
+									<li><a href="women.html">my shopping bag</a></li>
+									<li><a href="women.html">create wishlist</a></li>
+								</ul>	
+							</div>						
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>my company</h4>
+								<ul>
+									<li><a href="women.html">trends</a></li>
+									<li><a href="women.html">sale</a></li>
+									<li><a href="women.html">style videos</a></li>
+									<li><a href="women.html">accessories</a></li>
+									<li><a href="women.html">kids</a></li>
+									<li><a href="women.html">style videos</a></li>
+								</ul>	
+							</div>
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>popular</h4>
+								<ul>
+									<li><a href="women.html">Emping</a></li>
+									<li><a href="women.html">Keripik Sanjay</a></li>
+									<li><a href="women.html">Coffee Bongkar</a></li>
+									<li><a href="women.html">Nasi Goreng Ayam</a></li>
+									<li><a href="women.html">Lemon Tea</a></li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    				</div>
+				</li>
+				<li><a class="color6" href="#">Makanan Berat</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>shop</h4>
+								<ul>
+									<li><a href="women.html">new arrivals</a></li>
+									<li><a href="women.html">men</a></li>
+									<li><a href="women.html">women</a></li>
+									<li><a href="women.html">accessories</a></li>
+									<li><a href="women.html">kids</a></li>
+									<li><a href="women.html">brands</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>help</h4>
+								<ul>
+									<li><a href="women.html">trends</a></li>
+									<li><a href="women.html">sale</a></li>
+									<li><a href="women.html">style videos</a></li>
+									<li><a href="women.html">accessories</a></li>
+									<li><a href="women.html">kids</a></li>
+									<li><a href="women.html">style videos</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>my company</h4>
+								<ul>
+									<li><a href="women.html">trends</a></li>
+									<li><a href="women.html">sale</a></li>
+									<li><a href="women.html">style videos</a></li>
+									<li><a href="women.html">accessories</a></li>
+									<li><a href="women.html">kids</a></li>
+									<li><a href="women.html">style videos</a></li>
+								</ul>	
+							</div>												
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>account</h4>
+								<ul>
+									<li><a href="women.html">login</a></li>
+									<li><a href="women.html">create an account</a></li>
+									<li><a href="women.html">create wishlist</a></li>
+									<li><a href="women.html">my shopping bag</a></li>
+									<li><a href="women.html">brands</a></li>
+									<li><a href="women.html">create wishlist</a></li>
+								</ul>	
+							</div>						
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>my company</h4>
+								<ul>
+									<li><a href="women.html">trends</a></li>
+									<li><a href="women.html">sale</a></li>
+									<li><a href="women.html">style videos</a></li>
+									<li><a href="women.html">accessories</a></li>
+									<li><a href="women.html">kids</a></li>
+									<li><a href="women.html">style videos</a></li>
+								</ul>	
+							</div>
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>popular</h4>
+								<ul>
+									<li><a href="women.html">new arrivals</a></li>
+									<li><a href="women.html">men</a></li>
+									<li><a href="women.html">women</a></li>
+									<li><a href="women.html">accessories</a></li>
+									<li><a href="women.html">kids</a></li>
+									<li><a href="women.html">style videos</a></li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    				</div>
+				</li>
+				<li><a class="color9" href="#">Oleh-Oleh</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>shop</h4>
+								<ul>
+									<li><a href="women.html">Makanan Berat</a></li>
+									<li><a href="women.html">Makanan Ringan</a></li>
+									<li><a href="women.html">Minuman Dingin</a></li>
+									<li><a href="women.html">Minuman Panas</a></li>
+									<li><a href="women.html">Jamu Tradisional</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>help</h4>
+								<ul>
+									<li><a href="women.html">Cara registrasi account</a></li>
+									<li><a href="women.html">Cara menjadi Supplier</a></li>
+									<li><a href="women.html">Cara Pembelian</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>account</h4>
+								<ul>
+									<li><a href="women.html">login</a></li>
+									<li><a href="women.html">create an account</a></li>
+									<li><a href="women.html">create wishlist</a></li>
+									<li><a href="women.html">my shopping bag</a></li>
+									<li><a href="women.html">create wishlist</a></li>
+								</ul>	
+							</div>						
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>my company</h4>
+								<ul>
+									<li><a href="women.html">trends</a></li>
+									<li><a href="women.html">sale</a></li>
+									<li><a href="women.html">style videos</a></li>
+									<li><a href="women.html">accessories</a></li>
+									<li><a href="women.html">kids</a></li>
+									<li><a href="women.html">style videos</a></li>
+								</ul>	
+							</div>
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>popular</h4>
+								<ul>
+									<li><a href="women.html">Emping</a></li>
+									<li><a href="women.html">Keripik Sanjay</a></li>
+									<li><a href="women.html">Coffee Bongkar</a></li>
+									<li><a href="women.html">Nasi Goreng Ayam</a></li>
+									<li><a href="women.html">Lemon Tea</a></li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    			  </div>
+				</li>
+				<li><a class="color10" href="contact.html">Contact Us</a>
+					<div class="megapanel">
+						<div class="row">
+							<div class="col3">
+								<div class="h_nav">
+									<h4>contact us</h4>
+								</div>
+								<form class="contact">
+									<label for="name">Name</label>
+									<input id="name" type="text"/>
+									<label for="email">E-mail</label>
+									<input id="email" type="text"/>
+									<label for="message">Message</label>
+									<textarea rows="8" id="message"></textarea>
+									<input type="submit" value="Send"/>
+								</form>
+							</div>
+							<div class="col3">
+							</div>
+						</div>
+					</div>
+				</li>
+		 </ul> 
+	</div>
+</div>
+</div>
+
+<!-- content -->
+<div class="container">
+<div class="main">
+	<!-- start registration -->
+	<div class="registration">
+		<div class="registration_left">
+		<h2>new user? <span> create a SerbaKuliner account </span></h2>
+		<!--<a href="https://www.facebook.com/?_rdr"><div class="reg_fb"><img src="web/images/facebook.png" alt=""><i>register using Facebook</i><div class="clearfix"></div></div></a>-->
+		<!-- [if IE] 
+		    < link rel='stylesheet' type='text/css' href='ie.css'/>  
+		 [endif] -->  
+		  
+		<!-- [if lt IE 7]>  
+		    < link rel='stylesheet' type='text/css' href='ie6.css'/>  
+		<! [endif] -->  
+		<script>
+			(function() {
+		
+			// Create input element for testing
+			var inputs = document.createElement('input');
+			
+			// Create the supports object
+			var supports = {};
+			
+			supports.autofocus   = 'autofocus' in inputs;
+			supports.required    = 'required' in inputs;
+			supports.placeholder = 'placeholder' in inputs;
+		
+			// Fallback for autofocus attribute
+			if(!supports.autofocus) {
+				
+			}
+			
+			// Fallback for required attribute
+			if(!supports.required) {
+				
+			}
+		
+			// Fallback for placeholder attribute
+			if(!supports.placeholder) {
+				
+			}
+			
+			// Change text inside send button on submit
+			var send = document.getElementById('register-submit');
+			if(send) {
+				send.onclick = function () {
+					this.innerHTML = '...Sending';
+				}
+			}
+		
+		})();
+		</script>
+		 <div class="registration_form">
+		 <!-- Form -->
+			<form id="registration_form" action="daftar_member.php" method="post">
+				<div>
+					<label>
+						<input placeholder="Nama Depan:" type="text" name="nama_depan" tabindex="1" required autofocus>
+					</label>
+				</div>
+				<div>
+					<label>
+						<input placeholder="Nama Belakang:" type="text" name="nama_belakang" tabindex="2" required autofocus>
+					</label>
+				</div>
+				<div>
+						
+							<!--array yang digunakan pada ComboBox bulan
+								$bln=array(1=>"Januari","Februari","Maret","April","Mei",
+								"Juni","July","Agustus","September","Oktober",
+								"November","Desember");
+
+							//membuat tanggal 1-31 pada ComboBox
+								echo "Tanggal:<select name=tanggal>
+								<option value=01 selected>01</option>";
+								for($tgl=2; $tgl<=31; $tgl++){
+								$tgl_leng=strlen($tgl);
+								if ($tgl_leng==1)
+								$i="0".$tgl;
+								else
+								$i=$tgl;
+								echo "<option value=$tanggal>$tanggal</option>";}
+								echo "</select>";
+
+							//membuat bulan ComboBox
+								echo "<select name=bulan>
+								<option value=Januari selected>Januari</option>";
+								for($bulan=2; $bulan<=12; $bulan++){
+								echo "<option value=$bulan>$bln[$bulan]</option>";}
+								echo "</select>";
+
+							//Membuat tahun 1900 sampai sekarang pada ComboBox
+								$now=date("Y");
+								echo "<select name=tahun>
+								<option value=1900 selected>1900</option>";
+								for($thn=1901; $thn<=$now; $thn++){
+								echo "<option value=$thn>$thn</option>";}
+								echo "</select>";-->
+								
+					
+							
+							<?php
+							//array yang digunakan pada combobox bulan
+							$bln=array(1=>"Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember");
+							
+							//membuat tanggal 1-31 pada combobox
+							echo"Tanggal:<select name=tanggal><option value=01 selected>01</option>";
+							for($tgl=2; $tgl<=31; $tgl++){
+							$tgl_leng=strlen($tgl);
+							if ($tgl_leng==1)
+							$i="0".$tgl;
+							else
+							$i=$tgl;
+							echo "<option value=$i>$i</option>";}
+							echo "</select>";
+							
+							//membuat bulan combobox
+							echo "<select name=bulan>
+							<option value=1 selected>Januari</option>";
+							for($bulan=2; $bulan<=12; $bulan++){
+							echo "<option value=$bulan>$bln[$bulan]</option>";}
+							echo "</select>";
+							
+							//membuat tahun 1900 sampai sekarang
+							$now=date("Y");
+							echo "<select name=tahun><option value=1900 selected>1900</option>";
+							for($thn=1901; $thn<=$now; $thn++){
+							echo"<option value=$thn>$thn</option>";}
+							echo"</select>";
+							
+							?>
+					
+						
+							<?php 
+							
+							//filter pilihan tanggal
+							if(((($bulan==4)||($bulan==6)||($bulan==9)||($bulan==11))&&($tanggal==31))||(($bulan==2)&&($tahun%4==0)&&(($tanggal==30)||($tanggal==31)))||(($bulan==2)&&($tahun%4!=0)&&(($tanggal==29)||($tanggal==30)||($tanggal==31)))){
+							if((($bulan==4)||($bulan==6)||($bulan==9)||($bulan11))&&(tanggal==31)){
+							echo"<table bgcolor='#FFFF99' width='100%'>
+							<tr>
+								<td>
+								$#8226; Pengaturan Februari kabisat.
+								</td>
+							</tr>
+							</table>";
+							}
+							}
+						
+		
+							?>
+						
+				</div>
+				<div class="sky-form">
+					<div class="sky_form1">
+						<ul>
+						<label> Jenis Kelamin : </label>
+							<li><label class="radio left"><input type="radio" name="jenis_kelamin" value="Pria"><i></i>Pria</label></li>
+							<li><label class="radio"><input type="radio" name="jenis_kelamin" value="Wanita"><i></i>Wanita</label></li>
+							<div class="clearfix"></div>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<label>
+						<input placeholder="Alamat:" type="text" name="alamat" tabindex="2" required autofocus>
+					</label>
+				</div>
+				<div>
+				  <label>Provinsi :</label>
+                    <select name="provinsi">
+                    <option value=0 selected>- Pilih Provinsi -</option>";
+                    <?php $tampil=mysql_query("SELECT * FROM provinsi ORDER BY nama_provinsi");?>
+                    <?php while($r=mysql_fetch_array($tampil)){ ?>
+                    echo "<option value=<?php echo $r[id_provinsi];?>><?php echo $r[nama_provinsi];?></option>";
+                    <?php } ?>
+                echo "</select> <br>
+                <label>Kota : </label>
+                <select name="kota_kabupaten">
+                <option value=0 selected>- Pilih Kota -</option>";
+                <?php $tampil=mysql_query("SELECT * FROM kota_kabupaten ORDER BY nama_kota"); ?>
+                <?php while($r=mysql_fetch_array($tampil)){ ?>
+                echo "<option value=<?php echo $r[id_kota_kabupaten];?>><?php echo $r[nama_kota];?> </option>";
+                    <?php } ?>
+                echo "</select> <br>
+				</div>
+				<div>
+					<label>
+						<input placeholder="Telepon:" type="text" name="phone" tabindex="2" required autofocus>
+					</label>
+				</div>
+				<div>
+					<label>
+						<input placeholder="email address:" type="email" name="email" tabindex="3" required>
+					</label>
+				</div>
+				<div>
+					<label>
+						<input placeholder="password" type="password" name="password" tabindex="4" required>
+					</label>
+				</div>						
+				<!--<div>
+					<label>
+						<input placeholder="retype password" type="password" tabindex="4" required>
+					</label>
+				</div>-->	
+				<div>
+					<input type="submit" value="create an account" id="register-submit">
+				</div>															
+				
+			</form>
+			<!-- /Form -->
+		</div>
+	</div>
+	
+	<div class="clearfix"></div>
+			</div>
+	</div>
+	<div class="clearfix"></div>
+	</div>
+	<!-- end registration -->
+</div>
+</div>
+<!-- footer_top -->
+<div class="footer_top">
+ <div class="container">
+	<div class="span_of_4">
+		<div class="span1_of_4">
+			<h4>shop</h4>
+								<ul class="f_nav">
+									<li><a href="women.html">Makanan Berat</a></li>
+									<li><a href="women.html">Makanan Ringan</a></li>
+									<li><a href="women.html">Minuman Dingin</a></li>
+									<li><a href="women.html">Minuman Panas</a></li>
+									<li><a href="women.html">Jamu Tradisional</a></li>
+								</ul>	
+		</div>
+		<div class="span1_of_4">
+			<h4>help</h4>
+								<ul class="f_nav">
+									<li><a href="women.html">frekuently asked questions</a></li>
+									<li><a href="women.html">trends</a></li>
+									<li><a href="women.html">sale</a></li>
+									<li><a href="women.html">style videos</a></li>
+									<li><a href="women.html">accessories</a></li>
+									<li><a href="women.html">kids</a></li>
+									<li><a href="women.html">style videos</a></li>
+								</ul>
+		</div>
+		<div class="span1_of_4">
+			<h4>account</h4>
+								<ul class="f_nav">
+									<li><a href="women.html">login</a></li>
+									<li><a href="women.html">create an account</a></li>
+									<li><a href="women.html">create wishlist</a></li>
+									<li><a href="women.html">my shopping bag</a></li>
+									<li><a href="women.html">create wishlist</a></li>
+								</ul>			
+		</div>
+		<div class="span1_of_4">
+			<h4>popular</h4>
+								<ul class="f_nav">
+									<li><a href="women.html">Emping</a></li>
+									<li><a href="women.html">Keripik Sanjay</a></li>
+									<li><a href="women.html">Coffee Bongkar</a></li>
+									<li><a href="women.html">Nasi Goreng Ayam</a></li>
+									<li><a href="women.html">Lemon Tea</a></li>
+								</ul>			
+		</div>
+		<div class="clearfix"></div>
+		</div>
+		<!-- start span_of_2 -->
+		<div class="span_of_2">
+		<div class="span1_of_2">
+			<h5>need help? <a href="#">contact us <span> ></span> </a> </h5>
+			<p>(or) Call us: 089658351110</p>
+		</div>
+		<div class="span1_of_2">
+			<h5>follow us </h5>
+			<div class="social-icons">
+				     <ul>
+				        <li><a href="#" target="_blank"></a></li>
+				        <li><a href="#" target="_blank"></a></li>
+				        <li><a href="#" target="_blank"></a></li>
+				        <li><a href="#" target="_blank"></a></li>
+				        <li><a href="#" target="_blank"></a></li>
+					</ul>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		</div>
+  </div>
+</div>
+<!-- footer -->
+<div class="footer">
+ <div class="container">
+	<div class="copy">
+		<p class="link">&copy; All rights reserved | Design by&nbsp; Swatech Studio Sistem</a></p>
+	</div>
+ </div>
+</div>
+</body>
+</html>
